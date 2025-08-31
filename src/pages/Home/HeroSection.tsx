@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
             <div className="w-full lg:w-1/2 flex justify-center">
               <div className="relative w-full max-w-[500px] h-[300px] sm:h-[400px] md:h-[500px]">
                 <img 
-                  src="/assets/images/LaptopGuy-1756654825385.png" 
+                  src="/assets/images/Handshake.png" 
                   alt="Developer working with culture fit technology"
                   className="w-full h-full object-contain rounded-lg"
                 />
