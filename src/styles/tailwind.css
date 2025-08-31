@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background Colors */
+    --bg-primary: #060b27;
+    --bg-secondary: #0e1330;
+    --bg-tertiary: #151934;
+    --bg-accent: #282d45;
+    --bg-cyan: #32cafd;
+    --bg-green: #41e88d;
+    --bg-discord: #5865f2;
+    --bg-purple: #7214ff;
+    --bg-muted: #8f9bb7;
+    --bg-green-light: #b6ffc419;
+    --bg-pink: #df2db1;
+    --bg-red: #ff334b;
+    --bg-pink-light: #ffa6be19;
+
+    /* Text Colors */
+    --text-green: #41e88d;
+    --text-muted-dark: #434b72;
+    --text-muted: #474e6f;
+    --text-teal: #4c8776;
+    --text-secondary: #8f9bb7;
+    --text-accent: #f6285f;
+    --text-light: #f6f6f7;
+    --text-white: #ffffff;
+    --text-input: #464f7a;
+
+    /* Border Colors */
+    --border-primary: #151934;
+    --border-secondary: #282d45;
+  }
+}
+
+@layer utilities {
+  /* Background Colors */
+  .bg-primary {
+    background-color: var(--bg-primary);
+  }
+  .bg-secondary {
+    background-color: var(--bg-secondary);
+  }
+  .bg-tertiary {
+    background-color: var(--bg-tertiary);
+  }
+  .bg-accent {
+    background-color: var(--bg-accent);
+  }
+  .bg-purple {
+    background-color: var(--bg-purple);
+  }
+  .bg-green {
+    background-color: var(--bg-green);
+  }
+
+  /* Text Colors */
+  .text-primary {
+    color: var(--text-white);
+  }
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+  .text-muted {
+    color: var(--text-muted);
+  }
+  .text-light {
+    color: var(--text-light);
+  }
+  .text-input {
+    color: var(--text-input);
+  }
+
+  /* Border Colors */
+  .border-primary {
+    border-color: var(--border-primary);
+  }
+  .border-secondary {
+    border-color: var(--border-secondary);
+  }
+}
