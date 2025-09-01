@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../components/ui/Button';
 
+// A/B Test title variations
+const titleVariations = [
+  "Find the Perfect Culture Fit Every Time",
+  "Build Teams That Truly Work Together"
+];
+
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
+  const [currentTitle, setCurrentTitle] = useState<string>('');
+
+  // Randomly select title variation on component mount
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * titleVariations.length);
+    setCurrentTitle(titleVariations[randomIndex]);
+  }, []);
 
   const handleGetDemo = () => {
     navigate('/error');
@@ -33,7 +46,7 @@ const HeroSection: React.FC = () => {
             <div className="flex flex-col items-center lg:items-start gap-[15px] sm:gap-[20px] md:gap-[30px] w-full lg:w-1/2">
               <div className="flex flex-col items-center lg:items-start gap-[4px] sm:gap-[6px] md:gap-[8px] w-full">
                 <h1 className="text-[32px] sm:text-[42px] md:text-[54px] lg:text-[64px] font-satoshi font-bold leading-[44px] sm:leading-[58px] md:leading-[74px] lg:leading-[87px] text-center lg:text-left bg-gradient-to-b from-[#f6f6f7] to-[#7e808f] bg-clip-text text-transparent">
-                  Find the Perfect Culture Fit Every Time
+                  {currentTitle}
                 </h1>
                 <p className="text-[14px] sm:text-[16px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[22px] md:leading-[26px] text-center lg:text-left text-secondary max-w-full">
                   Culturo helps companies filter candidates based on culture fit during hiring. Our AI-powered platform ensures you build teams that align with your company values and work seamlessly together.
