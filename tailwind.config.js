@@ -15,6 +15,7 @@ module.exports = {
         accent: {
           background: "var(--bg-accent)",
           purple: "var(--bg-purple)",
+          lightblue: "var(--bg-lightblue)",
           green: "var(--bg-green)"
         },
         border: {
@@ -27,7 +28,8 @@ module.exports = {
           muted: "var(--text-muted)",
           light: "var(--text-light)",
           input: "var(--text-input)"
-        }
+        },
+        lightblue: "var(--bg-lightblue)"
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],

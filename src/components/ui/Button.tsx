@@ -22,10 +22,10 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props 
 }) => {
-  const baseClasses = 'font-medium rounded transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple';
+  const baseClasses = 'font-medium rounded transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightblue';
   
   const variants = {
-    primary: 'bg-purple text-primary hover:bg-opacity-90 disabled:bg-accent disabled:text-secondary',
+    primary: 'bg-lightblue text-primary hover:bg-opacity-90 disabled:bg-accent disabled:text-secondary',
     secondary: 'bg-secondary text-primary hover:bg-accent disabled:bg-accent disabled:text-secondary',
     outline: 'border border-secondary text-secondary hover:bg-secondary hover:text-primary disabled:border-accent disabled:text-muted',
   };

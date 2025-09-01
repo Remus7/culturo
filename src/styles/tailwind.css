@@ -12,7 +12,8 @@
     --bg-cyan: #32cafd;
     --bg-green: #41e88d;
     --bg-discord: #5865f2;
-    --bg-purple: #7214ff;
+    --bg-purple: #4da6ff; /* Changed from purple #7214ff to blue */
+    --bg-lightblue: #4da6ff;
     --bg-muted: #8f9bb7;
     --bg-green-light: #b6ffc419;
     --bg-pink: #df2db1;
@@ -28,7 +29,7 @@
     --text-accent: #f6285f;
     --text-light: #f6f6f7;
     --text-white: #ffffff;
-    --text-input: #464f7a;
+    --text-input: #ffffff; /* Changed from #464f7a to white for better contrast */
 
     /* Border Colors */
     --border-primary: #151934;
@@ -52,6 +53,9 @@
   }
   .bg-purple {
     background-color: var(--bg-purple);
+  }
+  .bg-lightblue {
+    background-color: var(--bg-lightblue);
   }
   .bg-green {
     background-color: var(--bg-green);
@@ -80,5 +84,8 @@
   }
   .border-secondary {
     border-color: var(--border-secondary);
+  }
+  .border-lightblue {
+    border-color: var(--bg-lightblue);
   }
 }

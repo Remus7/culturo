@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
       {/* Main Footer */}
       <div className="w-full bg-primary relative overflow-hidden mt-[-3px] sm:mt-[-4px] md:mt-[-6px]">
         {/* Background decorative element */}
-        <div className="absolute bottom-[49px] sm:bottom-[74px] md:bottom-[98px] left-1/2 transform -translate-x-1/2 w-[180px] sm:w-[211px] md:w-[242px] h-[180px] sm:h-[211px] md:h-[242px] bg-purple rounded-[90px] sm:rounded-[105px] md:rounded-[120px] shadow-[0px_4px_500px_#888888ff]"></div>
+        <div className="absolute bottom-[49px] sm:bottom-[74px] md:bottom-[98px] left-1/2 transform -translate-x-1/2 w-[180px] sm:w-[211px] md:w-[242px] h-[180px] sm:h-[211px] md:h-[242px] bg-lightblue rounded-[90px] sm:rounded-[105px] md:rounded-[120px] shadow-[0px_4px_500px_#888888ff]"></div>
         
         <div className="relative z-10 py-[20px] sm:py-[30px] md:py-[40px]">
           <div className="w-full max-w-[1228px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,22 +30,22 @@ const Footer: React.FC = () => {
                 {/* Newsletter Section */}
                 <div className="flex flex-col gap-[17px] sm:gap-[26px] md:gap-[34px] w-full lg:w-auto">
                   <div className="flex items-center gap-2">
-                    <h3 className="text-[24px] sm:text-[28px] md:text-[32px] font-satoshi font-bold text-purple">
+                    <h3 className="text-[24px] sm:text-[28px] md:text-[32px] font-satoshi font-bold text-lightblue">
                       Culturo
                     </h3>
                   </div>
                   <div className="bg-secondary border border-accent rounded-[10px] p-6 sm:p-8 md:p-[36px] w-full lg:w-[70%]">
                     <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px]">
-                      <h3 className="text-[18px] sm:text-[21px] md:text-[24px] font-satoshi font-bold leading-[24px] sm:leading-[28px] md:leading-[33px] text-light">
+                      <h3 className="text-[18px] sm:text-[21px] md:text-[24px] font-satoshi font-bold leading-[24px] sm:leading-[28px] md:leading-[33px] text-white">
                         Subscribe to our newsletter
                       </h3>
                       <div className="flex flex-col gap-[10px] sm:gap-[12px] md:gap-[14px]">
                         <EditText
                           placeholder="Enter your email"
                           type="email"
-                          className="w-full bg-secondary border border-accent text-input"
+                          className="w-full bg-primary border border-lightblue text-white placeholder-secondary"
                         />
-                        <Button className="w-full bg-purple text-primary font-satoshi font-medium text-[14px] sm:text-[16px] leading-[19px] sm:leading-[22px] rounded-[22px] px-[28px] sm:px-[32px] md:px-[34px] py-[8px] sm:py-[9px] md:py-[10px] hover:bg-opacity-90 transition-all duration-200">
+                        <Button className="w-full bg-lightblue text-primary font-satoshi font-medium text-[14px] sm:text-[16px] leading-[19px] sm:leading-[22px] rounded-[22px] px-[28px] sm:px-[32px] md:px-[34px] py-[8px] sm:py-[9px] md:py-[10px] hover:bg-opacity-90 transition-all duration-200">
                           Subscribe
                         </Button>
                       </div>
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                         <a 
                           key={index}
                           href="#"
-                          className="text-[14px] sm:text-[15px] md:text-[16px] font-satoshi font-medium leading-[19px] sm:leading-[20px] md:leading-[22px] text-secondary hover:text-light transition-colors duration-200"
+                          className="text-[14px] sm:text-[15px] md:text-[16px] font-satoshi font-medium leading-[19px] sm:leading-[20px] md:leading-[22px] text-white hover:text-lightblue transition-colors duration-200"
                         >
                           {link}
                         </a>
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
                         <a 
                           key={index}
                           href="#"
-                          className="block text-[14px] sm:text-[15px] md:text-[16px] font-satoshi font-medium leading-[19px] sm:leading-[20px] md:leading-[22px] text-secondary hover:text-light transition-colors duration-200 mb-[12px] sm:mb-[14px] md:mb-[16px]"
+                          className="block text-[14px] sm:text-[15px] md:text-[16px] font-satoshi font-medium leading-[19px] sm:leading-[20px] md:leading-[22px] text-white hover:text-lightblue transition-colors duration-200 mb-[12px] sm:mb-[14px] md:mb-[16px]"
                         >
                           {link}
                         </a>
@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
                         <a 
                           key={index}
                           href="#"
-                          className="text-[14px] sm:text-[15px] md:text-[16px] font-satoshi font-medium leading-[19px] sm:leading-[20px] md:leading-[22px] text-secondary hover:text-light transition-colors duration-200"
+                          className="text-[14px] sm:text-[15px] md:text-[16px] font-satoshi font-medium leading-[19px] sm:leading-[20px] md:leading-[22px] text-white hover:text-lightblue transition-colors duration-200"
                         >
                           {link}
                         </a>
@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
                     ].map((social, index) => (
                       <button 
                         key={index}
-                        className="w-[28px] sm:w-[31px] md:w-[34px] h-[28px] sm:h-[31px] md:h-[34px] bg-primary border border-accent rounded-[6px] sm:rounded-[7px] md:rounded-[8px] flex items-center justify-center hover:bg-purple transition-colors duration-200"
+                        className="w-[28px] sm:w-[31px] md:w-[34px] h-[28px] sm:h-[31px] md:h-[34px] bg-primary border border-accent rounded-[6px] sm:rounded-[7px] md:rounded-[8px] flex items-center justify-center hover:bg-lightblue transition-colors duration-200"
                       >
                         <img 
                           src={social.icon} 
@@ -143,26 +143,6 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Bottom CTA Section */}
-      <div className="w-full bg-secondary py-[28px] sm:py-[42px] md:py-[56px] px-[28px] sm:px-[42px] md:px-[56px]">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-[12px] sm:gap-[16px] md:gap-[18px] w-full max-w-[400px] sm:max-w-[500px] md:max-w-[560px] mx-auto">
-          <div className="flex flex-col sm:flex-row items-center gap-[16px] sm:gap-[20px] md:gap-[22px] flex-1 border border-[#9747ff] rounded-[4px] sm:rounded-[5px] p-[16px] sm:p-[18px] md:p-[20px]">
-            <Button 
-              variant="outline"
-              className="w-full sm:w-auto border border-accent text-light font-satoshi font-medium text-[14px] sm:text-[16px] leading-[19px] sm:leading-[22px] rounded-[22px] px-[20px] sm:px-[24px] py-[8px] sm:py-[10px] bg-gradient-to-br from-[#15183484] via-[#15183414] to-[#1518347c] hover:bg-opacity-90 transition-all duration-200"
-            >
-              View pricing
-            </Button>
-            <Button className="w-full sm:w-auto bg-tertiary border border-[#363e60] text-light font-satoshi font-medium text-[14px] sm:text-[16px] leading-[19px] sm:leading-[22px] rounded-[22px] px-[20px] sm:px-[24px] py-[8px] sm:py-[10px] hover:bg-accent transition-all duration-200">
-              Start free trial
-            </Button>
-          </div>
-          <Button className="w-full sm:w-auto bg-purple text-primary font-satoshi font-medium text-[14px] sm:text-[16px] leading-[19px] sm:leading-[22px] rounded-[22px] px-[20px] sm:px-[24px] py-[8px] sm:py-[10px] hover:bg-opacity-90 transition-all duration-200">
-            Get a demo
-          </Button>
         </div>
       </div>
     </footer>

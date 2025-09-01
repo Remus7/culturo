@@ -35,15 +35,15 @@ const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section className="w-full bg-primary py-[35px] sm:py-[52px] md:py-[70px]">
+    <section id="features" className="w-full bg-primary py-[70px] sm:py-[87px] md:py-[105px] mt-[50px] sm:mt-[65px] md:mt-[80px]">
       <div className="w-full max-w-[1228px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-[30px] sm:gap-[45px] md:gap-[60px]">
           {/* Section Header */}
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-8">
-            <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[56px] font-satoshi font-bold leading-[44px] sm:leading-[54px] md:leading-[58px] lg:leading-[64px] text-left bg-gradient-to-b from-[#f6f6f7] to-[#7e808f] bg-clip-text text-transparent w-full lg:w-[58%]">
+          <div className="flex flex-col items-center text-center gap-4 lg:gap-6">
+            <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[56px] font-satoshi font-bold leading-[44px] sm:leading-[54px] md:leading-[58px] lg:leading-[64px] bg-gradient-to-b from-[#f6f6f7] to-[#7e808f] bg-clip-text text-transparent max-w-[900px]">
               Powerful features to help you hire for culture fit
             </h2>
-            <p className="text-[14px] sm:text-[15px] md:text-[16px] font-inter font-normal leading-[20px] sm:leading-[22px] md:leading-[24px] text-left text-secondary w-full lg:w-[32%]">
+            <p className="text-[14px] sm:text-[15px] md:text-[16px] font-inter font-normal leading-[20px] sm:leading-[22px] md:leading-[24px] text-secondary max-w-[600px]">
               Our comprehensive platform helps you identify candidates who will thrive in your company culture, leading to better retention and team performance.
             </p>
           </div>
@@ -53,7 +53,7 @@ const FeaturesSection: React.FC = () => {
             {features.map((feature, index) => (
               <div 
                 key={index}
-                className="bg-secondary border border-accent rounded-[4px] p-6 sm:p-7 md:p-[30px] flex flex-col gap-[20px] sm:gap-[24px] md:gap-[30px] hover:border-purple transition-colors duration-300"
+                className="bg-secondary border border-accent rounded-[4px] p-6 sm:p-7 md:p-[30px] flex flex-col gap-[20px] sm:gap-[24px] md:gap-[30px] hover:border-lightblue transition-colors duration-300"
               >
                 <img 
                   src={feature.icon} 
@@ -70,6 +70,17 @@ const FeaturesSection: React.FC = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Developer Visual */}
+          <div className="flex justify-center mb-8">
+            <div className="relative w-full max-w-[400px] h-[250px] sm:h-[300px] md:h-[350px]">
+              <img 
+                src="/assets/images/LaptopGuy-1756654825385.png" 
+                alt="Developer working with culture fit technology"
+                className="w-full h-full object-contain rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
