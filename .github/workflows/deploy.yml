@@ -28,7 +28,7 @@ jobs:
           # cache: "npm"   # change to "pnpm" or "yarn" if you use those
 
       - name: Install deps
-        run: npm ci      # use: pnpm i --frozen-lockfile  OR  yarn --frozen-lockfile
+        run: npm i      # use: pnpm i --frozen-lockfile  OR  yarn --frozen-lockfile
 
       - name: Build
         run: npm run build
